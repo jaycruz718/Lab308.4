@@ -127,3 +127,21 @@
 // As a final task, transform the final set of data back into CSV format.
 // There are a number of ways to do this; be creative!
 // Once complete, be sure to submit your work according to the submission instructions at the beginning of this document.
+
+let data = [
+  { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+  { id: "48", name: "Barry", occupation: "Runner", age: "25" },
+  { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+  { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+  { id: "7", name: "Bilbo", occupation: "None", age: "111" }
+];
+
+const headers = Object.keys(data[0]);
+
+const rows = data.map(row => {
+  return headers.map(header => row[header]).join(','); 
+ });
+ 
+const csvData = [headers.join(','), ...rows].join('\n');
+
+console.log(csvData);
