@@ -106,11 +106,19 @@ let data = [
 ];
 
 // 1. Remove the last element from the sorted array.
-data.pop(); 
+// data.pop(); 
 
 // 2. Insert the following object at index 1:
 data.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
 
 // Add the following object to the end of the array:
 data.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
-console.log(data);
+
+// Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. This calculation should be accomplished using a loop.
+let totalAge = 0;
+for (let i = 0; i < data.length; i++) {
+  totalAge += parseInt(data[i].age); 
+}
+
+const averageAge = totalAge / data.length;
+console.log(averageAge);
