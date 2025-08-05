@@ -45,7 +45,7 @@
 
 // Part 1: Refactoring Old Code
 
-let csvData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
+// let csvData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor's Assistant,26`;
 // console.log(csvData);
 
 
@@ -98,27 +98,32 @@ let csvData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n6
 
 // Using array methods, accomplish the following tasks, in order upon the result of Part 3:
 // Sample data from Part 3
-let data = [
-  { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
-  { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
-  { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
-  { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }
-];
+// let data = [
+  // { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+  // { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+  // { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+  // { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }
+// ];
 
 // 1. Remove the last element from the sorted array.
 // data.pop(); 
 
 // 2. Insert the following object at index 1:
-data.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
+// data.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
 
 // Add the following object to the end of the array:
-data.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
+// data.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
 
 // Finally, use the values of each object within the array and the array’s length property to calculate the average age of the group. This calculation should be accomplished using a loop.
-let totalAge = 0;
-for (let i = 0; i < data.length; i++) {
-  totalAge += parseInt(data[i].age); 
-}
+// let totalAge = 0;
+// for (let i = 0; i < data.length; i++) {
+  // totalAge += parseInt(data[i].age); 
+// }
 
-const averageAge = totalAge / data.length;
-console.log(averageAge);
+// const averageAge = totalAge / data.length;
+// console.log(averageAge);
+
+// Part 5: Full Circle
+// As a final task, transform the final set of data back into CSV format.
+// There are a number of ways to do this; be creative!
+// Once complete, be sure to submit your work according to the submission instructions at the beginning of this document.
