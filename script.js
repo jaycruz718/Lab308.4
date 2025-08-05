@@ -38,18 +38,27 @@
   // }
 
   // If last char in string print final cells
-  // f (csvStr.length - 1 == i) {
+  // if (csvStr.length - 1 == i) {
     // console.log(cell1, cell2, cell3, cell4);
   // }
 // }
 
 // Part 1: Refactoring Old Code
 
+let csvStr = columnAll;
+console.log(csv);
+
+
+// Part 2: Expanding Functionality
+
 // Declare a variable that stores the number of columns in each row of data within the CSV.
-//let csv = numbCol;
 
 // Instead of hard-coding four columns per row, expand your code to accept any number of columns. This should be calculated dynamically based on the first row of data.
 
-let cells = [cell1, cell2, cell3, cell4]
+// let cells = [cell1, cell2, cell3, cell4]
 
-console.log(cells);
+// console.log(cells);
+
+
+
+
