@@ -73,19 +73,44 @@ let csvData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n6
 
 // Implement the following:
 // For each row of data in the result array produced by your code above, create an object where the key of each value is the heading for that value’s column.
-let data = [
-  ["ID", "Name", "Occupation", "Age"],
-  ["42", "Bruce", "Knight", "41"],
-  ["57", "Bob", "Fry Cook", "19"],
-  ["63", "Blaine", "Quiz Master", "58"],
-  ["98", "Bill", "Doctor’s Assistant", "26"]
-];
+// let data = [
+//   ["ID", "Name", "Occupation", "Age"],
+//   ["42", "Bruce", "Knight", "41"],
+//   ["57", "Bob", "Fry Cook", "19"],
+//   ["63", "Blaine", "Quiz Master", "58"],
+//  ["98", "Bill", "Doctor’s Assistant", "26"]
+// ];
 
-console.log(data);
 // Convert these keys to all lowercase letters for consistency.
 // Store these objects in an array, in the order that they were originally listed.
+// const headers = data[0].map(header => header.toLowerCase());
 // Since the heading for each column will be stored in the object keys, you do not need to create an object for the heading row itself.
+// const transformedData = data.slice(1).map(row => {
+  // let rowObject = {};
+  // row.forEach((value, index) => {
+    /// rowObject[headers[index]] = value; // Map each value to its corresponding header (key)
+  // });
+  // return rowObject;
+// });
+// console.log(transformedData);
 
+// Part 4: Sorting and Manipulating Data
 
+// Using array methods, accomplish the following tasks, in order upon the result of Part 3:
+// Sample data from Part 3
+let data = [
+  { id: "42", name: "Bruce", occupation: "Knight", age: "41" },
+  { id: "57", name: "Bob", occupation: "Fry Cook", age: "19" },
+  { id: "63", name: "Blaine", occupation: "Quiz Master", age: "58" },
+  { id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26" }
+];
 
+// 1. Remove the last element from the sorted array.
+data.pop(); 
 
+// 2. Insert the following object at index 1:
+data.splice(1, 0, { id: "48", name: "Barry", occupation: "Runner", age: "25" });
+
+// Add the following object to the end of the array:
+data.push({ id: "7", name: "Bilbo", occupation: "None", age: "111" });
+console.log(data);
