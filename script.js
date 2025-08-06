@@ -136,12 +136,12 @@ let data = [
   { id: "7", name: "Bilbo", occupation: "None", age: "111" }
 ];
 
-const headers = Object.keys(data[0]);
+const inform = Object.keys(data[0]);
 
 const rows = data.map(row => {
-  return headers.map(header => row[header]).join(','); 
+  return inform.map(inform => row[inform]).join(','); 
  });
  
-const csvData = [headers.join(','), ...rows].join('\n');
+const csvData = [inform.join(','), ...rows].join('\n');
 
 console.log(csvData);
