@@ -4,3 +4,4 @@
 - Figured out the problem. I looked up on Google Chrome to figure out what I was doing wrong with the first part. This made it easier to figure out the words to use.
 - Part 3 has been easier to put together.
 - Finished with part 4 but trying to figure out part 5.
+- After trial and error, I finally figured out part 5.
